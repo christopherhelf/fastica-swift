@@ -55,9 +55,7 @@ public func fastICA(_X: Matrix<Double>, compc: Int) -> (K: Matrix<Double>, W: Ma
     X = applyFunc(X, Double(X.rows), fx_div_c)
     
     var V = mul(XT, X)
-    
-    // CHECK BIS HIERHER
-       
+           
     // SVD
     
     var svdRtn = svdcmp(V)
